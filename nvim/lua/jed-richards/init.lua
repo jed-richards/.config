@@ -1,2 +1,2 @@
-require("jed-richards.keymap")
-require("jed-richards.options")
+require("jed-richards.core")
+require("jed-richards.lazy")

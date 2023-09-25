@@ -10,3 +10,4 @@ Dotfiles
 - oh-my-posh : make terminal pretty (windows/wsl)
 - zoxide : better cd 
 - neofetch
+- valgrind : C debugging
