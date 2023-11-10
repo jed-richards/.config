@@ -1,0 +1,8 @@
+# Directories I don't want included
+BraveSoftware/
+mimeapps.list
+pulse/
+systemd/
+
+# Incase i I use qtile
+__pycache__/
