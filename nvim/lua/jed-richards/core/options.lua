@@ -31,6 +31,7 @@ vim.opt.pumheight = 10            -- pop up menu height
 vim.opt.showmode = true           -- to see things like -- INSERT -- 
 vim.cmd [[set whichwrap+=h,l]]    -- allows h and l to move to next line if at last character
 vim.cmd [[set iskeyword+=-]]   	  -- allows word-with-dashes to be seen as one word
+--vim.opt.iskeyword:append("-")     -- same as above
 
 -- Splits and Tabs
 vim.opt.splitbelow = true    -- force all horizontal splits to go below current window

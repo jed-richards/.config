@@ -1,25 +1,3 @@
---local telescope = require('telescope')
---telescope.setup({
---    defaults = {
---        layout_strategy = "horizontal",
---        layout_config = {
---            width = 0.95,
---            height = 0.85,
---            prompt_position = "top",
---        },
---    },
-
---    color_devicons = true,
-
---    pickers = {
---        find_files = {
---            theme = "dropdown",
---            --theme = "cursor",
---            --theme = "ivy",
---        },
---    },
---})
-
 pcall(require('telescope').load_extension, 'fzf')
 
 -- set keymaps
@@ -31,12 +9,12 @@ vim.keymap.set('n', '<leader>fs', builtin.grep_string, {desc = "[F]ind [S]tring 
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {desc = "[F]ind [B]uffers"})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {desc = "[F]ind [H]elp"})
 vim.keymap.set('n', '<leader>fm', builtin.man_pages, {desc = "[F]ind [M]an Pages"})
-vim.keymap.set('n', '<leader>/', 
+vim.keymap.set('n', '<leader>/',
     function()
         builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
             winblend = 10,
             previewer = false,
         })
-    end, 
+    end,
     { desc = '[/] Fuzzily search in current buffer' }
 )

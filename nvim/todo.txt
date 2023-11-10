@@ -1,0 +1,21 @@
+Plugins to add
+- trouble
+- fugitive
+- lsp zero (with mason) https://github.com/VonHeikemen/lsp-zero.nvim#quickstart-for-the-impatient
+- friendly snippets
+- luasnip
+- LSP -> https://www.youtube.com/watch?v=NL8D8EkphUw&t=22s
+- oil.nvim (maybe)
+
+
+Plugins to look into 
+- refactoring (primeagen)
+- copilot
+- legendary https://github.com/mrjones2014/legendary.nvim
+- neorg https://github.com/nvim-neorg/neorg#-tutorial
+- startup https://github.com/startup-nvim/startup.nvim
+- octo https://github.com/pwntester/octo.nvim
+
+
+Learn about Quickfix list
+Learn plenary
