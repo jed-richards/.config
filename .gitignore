@@ -4,5 +4,24 @@ mimeapps.list
 pulse/
 systemd/
 
+# Ubuntu VM
+.gsd-keyboard.settings-ported
+GNOME-xdg-terminals.list
+dconf/
+evolution/
+gnome-initial-setup-done
+gtk-3.0/
+ibus/
+tiling-assistant/
+ubuntu-xdg-terminals.list
+user-dirs.dirs
+user-dirs.locale
+xdg-terminals.list
+
 # Incase i I use qtile
 __pycache__/
+On branch main
+Your branch is up to date with 'origin/main'.
+
+
+nothing added to commit but untracked files present (use "git add" to track)
