@@ -15,6 +15,8 @@ lsp_zero.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+local lspconfig = require("lspconfig")
+--local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 require('mason').setup({})
 require('mason-lspconfig').setup({
     ensure_installed = { "lua_ls", "rust_analyzer" },
@@ -22,10 +24,23 @@ require('mason-lspconfig').setup({
         lsp_zero.default_setup,
         lua_ls = function()
             local lua_opts = lsp_zero.nvim_lua_ls()
-            require('lspconfig').lua_ls.setup(lua_opts)
+            lspconfig.lua_ls.setup(lua_opts)
+        end,
+        rust_analyzer = function ()
+            --lspconfig.rust_analyzer.setup({
+            --    settings = {
+            --        ['rust-analyzer'] = {},
+            --    },
+            --    --capabilities = lsp_capabilities,
+            --})
+            lspconfig.rust_analyzer.setup({})
         end,
     }
 })
+
+local luasnip = require('luasnip')
+require('luasnip.loaders.from_vscode').lazy_load()
+luasnip.config.setup {}
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
