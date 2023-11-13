@@ -2,7 +2,7 @@
 vim.g.mapleader = " "
 
 -- Aliases
-map = vim.keymap.set
+local map = vim.keymap.set
 
 -- File Explorer (NetRW)
 map("n", "<leader>pv", vim.cmd.Ex)

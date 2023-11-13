@@ -28,7 +28,7 @@ vim.opt.guicursor = ""            -- This makes the cursor fat (Me likey...)
 vim.opt.wrap = false              -- display lines as one long line
 vim.opt.pumheight = 10            -- pop up menu height
 --vim.opt.cmdheight = 2             -- more space in the neovim command line for displaying messages
-vim.opt.showmode = true           -- to see things like -- INSERT -- 
+vim.opt.showmode = true           -- to see things like -- INSERT --
 vim.cmd [[set whichwrap+=h,l]]    -- allows h and l to move to next line if at last character
 vim.cmd [[set iskeyword+=-]]   	  -- allows word-with-dashes to be seen as one word
 --vim.opt.iskeyword:append("-")     -- same as above
@@ -58,10 +58,15 @@ vim.opt.showtabline = 2      -- always show tabs
 --vim.opt.mouse = "a"          -- allow the mouse to be used in neovim
 
 -- Random
-vim.opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
+vim.opt.completeopt = { "menu", "menuone", "noselect" } -- mostly just for cmp
 vim.opt.conceallevel = 0                        -- so that `` is visible in markdown files
 vim.opt.fileencoding = "utf-8"                  -- the encoding written to a file
 vim.opt.termguicolors = true                    -- set term gui colors (most terminals support this)
 vim.opt.timeoutlen = 1000                       -- time to wait for a mapped sequence to complete (in milliseconds)
 vim.opt.updatetime = 300                        -- faster completion (4000ms default)
 --vim.opt.guifont = "monospace:h17"             -- the font used in graphical neovim applications
+
+-- Makes command search look better
+--vim.opt.pumblend = 17  -- transparent
+vim.opt.wildmode = "longest:full"
+vim.opt.wildoptions = "pum"
