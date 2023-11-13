@@ -65,3 +65,8 @@ vim.opt.termguicolors = true                    -- set term gui colors (most ter
 vim.opt.timeoutlen = 1000                       -- time to wait for a mapped sequence to complete (in milliseconds)
 vim.opt.updatetime = 300                        -- faster completion (4000ms default)
 --vim.opt.guifont = "monospace:h17"             -- the font used in graphical neovim applications
+
+-- Makes command search look better
+--vim.opt.pumblend = 17  -- transparent 
+vim.opt.wildmode = "longest:full"
+vim.opt.wildoptions = "pum"
