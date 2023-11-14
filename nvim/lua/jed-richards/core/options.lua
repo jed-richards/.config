@@ -58,7 +58,7 @@ vim.opt.showtabline = 2      -- always show tabs
 --vim.opt.mouse = "a"          -- allow the mouse to be used in neovim
 
 -- Random
-vim.opt.completeopt = { "menu", "menuone", "noselect" } -- mostly just for cmp
+vim.opt.completeopt = { "menu", "menuone", "noselect", "preview" } -- mostly just for cmp
 vim.opt.conceallevel = 0                        -- so that `` is visible in markdown files
 vim.opt.fileencoding = "utf-8"                  -- the encoding written to a file
 vim.opt.termguicolors = true                    -- set term gui colors (most terminals support this)
