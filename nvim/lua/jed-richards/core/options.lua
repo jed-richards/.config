@@ -40,21 +40,21 @@ vim.opt.showtabline = 2      -- always show tabs
 
 -- Mouse and Clipboard
 -- allows neovim access to system clipboard through WSL
---vim.cmd [[
---    set clipboard+=unnamedplus
---    let g:clipboard = {
---        \   'name': 'WslClipboard',
---        \   'copy': {
---        \      '+': 'clip.exe',
---        \      '*': 'clip.exe',
---        \    },
---        \   'paste': {
---        \      '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
---        \      '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
---        \   },
---        \   'cache_enabled': 0,
---        \ }
---]]
+vim.cmd [[
+    set clipboard+=unnamedplus
+    let g:clipboard = {
+        \   'name': 'WslClipboard',
+        \   'copy': {
+        \      '+': 'clip.exe',
+        \      '*': 'clip.exe',
+        \    },
+        \   'paste': {
+        \      '+': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+        \      '*': 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+        \   },
+        \   'cache_enabled': 0,
+        \ }
+]]
 --vim.opt.mouse = "a"          -- allow the mouse to be used in neovim
 
 -- Random
